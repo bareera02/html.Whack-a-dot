@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #B6BBC4;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#game-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#score {
+    font-size: 18px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px; /* Add margin to create space between the holes and the button */
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background-color: #31304D;
+    position: relative;
+}
+
+.caterpillar {
+    width: 80px;
+    height: 80px;
+    background-color:#F0ECE5;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+#start-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color:#161A30;
+    color: #F0ECE5;
+    border: none;
+    cursor: pointer;
+}
+#exit-button
+{
+    padding: 12px;
+    font-size: 16px;
+    background-color:#161A30;
+    color: #F0ECE5;
+    border: none;
+    cursor: pointer;
+}
